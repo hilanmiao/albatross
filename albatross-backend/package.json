@@ -1,0 +1,49 @@
+{
+  "name": "albatross-backend",
+  "version": "1.0.0",
+  "description": "A simple demonstration of the rest-hapi plugin.",
+  "main": "api.js",
+  "scripts": {
+    "start": "npm run start:local",
+    "start:local": "NODE_ENV=local nodemon index.js",
+    "start:dev": "NODE_ENV=development nodemon index.js",
+    "start:prod": "NODE_ENV=production node index.js",
+    "seed": "node scripts/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix **/*.js ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKHeadley/rest-hapi-demo.git"
+  },
+  "keywords": [
+    "rest-hapi"
+  ],
+  "author": "Justin Headley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JKHeadley/rest-hapi-demo/issues"
+  },
+  "homepage": "https://github.com/JKHeadley/rest-hapi-demo#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "bell": "^10.0.0",
+    "boom": "^7.3.0",
+    "chalk": "^2.4.2",
+    "confidence": "^4.0.2",
+    "dotenv": "^8.1.0",
+    "glue": "^6.0.0",
+    "hapi-auth-jwt2": "^8.4.0",
+    "iplocation": "^6.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "lodash-pickdeep": "^1.0.2",
+    "mongoose": "^5.7.1",
+    "node-uuid": "^1.4.8",
+    "password-generator": "^2.2.0",
+    "rest-hapi": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
